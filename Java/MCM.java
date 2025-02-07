@@ -24,6 +24,6 @@ public class MCM {
         long startTime = System.nanoTime();
         mcmVarios(12321, 5674, 123, 821);
         long endTime = System.nanoTime();
-        System.out.println((endTime - startTime) / 1_000_000.0 + "ms");
+        System.out.println((endTime - startTime) / 1_000_000.0);
     }
 }

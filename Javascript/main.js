@@ -16,4 +16,4 @@ function mcmVarios(...args) {
 const startTime = performance.now();
 mcmVarios(12321, 5674, 123, 821);
 const endTime = performance.now();
-console.log(`${endTime - startTime}ms`);
+console.log(`${endTime - startTime}`);
