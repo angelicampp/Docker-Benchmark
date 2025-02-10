@@ -1,8 +1,6 @@
 FROM golang:1.19-alpine
 
-COPY main.go /app/main.go
-
-WORKDIR /app
+COPY main.go /main.go
 
 RUN go build -o main main.go
-CMD ["sh", "-c", "./main > output.txt"]
+CMD ["sh", "-c", "./main > /app/output.txt"]

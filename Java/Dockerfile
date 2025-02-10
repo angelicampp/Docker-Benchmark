@@ -1,8 +1,6 @@
 FROM openjdk:17-slim
 
-COPY MCM.java /app/MCM.java
-
-WORKDIR /app
+COPY MCM.java /MCM.java
 
 RUN javac MCM.java
-CMD ["sh", "-c", "java MCM > output.txt"]
+CMD ["sh", "-c", "java MCM > /app/output.txt"]
