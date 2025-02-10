@@ -4,4 +4,4 @@ COPY main.py /app/main.py
 
 WORKDIR /app
 
-CMD ["python", "main.py"]
+CMD ["sh", "-c", "python main.py > output.txt"]

@@ -5,4 +5,4 @@ COPY MCM.java /app/MCM.java
 WORKDIR /app
 
 RUN javac MCM.java
-CMD ["java", "MCM"]
+CMD ["sh", "-c", "java MCM > output.txt"]

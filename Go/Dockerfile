@@ -5,4 +5,4 @@ COPY main.go /app/main.go
 WORKDIR /app
 
 RUN go build -o main main.go
-CMD ["./main"]
+CMD ["sh", "-c", "./main > output.txt"]

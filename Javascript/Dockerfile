@@ -4,4 +4,4 @@ COPY main.js /app/main.js
 
 WORKDIR /app
 
-CMD ["node", "main.js"]
+CMD ["sh", "-c", "node main.js > output.txt"]

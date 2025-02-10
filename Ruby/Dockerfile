@@ -4,4 +4,4 @@ COPY main.rb /app/main.rb
 
 WORKDIR /app
 
-CMD ["ruby", "main.rb"]
+CMD ["sh", "-c", "ruby main.rb > output.txt"]
