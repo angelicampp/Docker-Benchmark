@@ -33,7 +33,9 @@ func abs(x int) int {
 
 func main() {
     startTime := time.Now()
-    mcmVarios(12321, 5674, 123, 821)
+		for i := 0; i < 300000; i++ {
+    	mcmVarios(12321, 5674, 123, 821)
+		}
     endTime := time.Now()
     fmt.Printf("%v\n", endTime.Sub(startTime).Seconds() * 1000)
 }

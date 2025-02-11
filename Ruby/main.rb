@@ -14,6 +14,8 @@ def mcm_varios(*args)
 end
 
 start_time = Time.now
-mcm_varios(12321, 5674, 123, 821)
+for i in 0...300000
+  mcm_varios(12321, 5674, 123, 821)
+end
 end_time = Time.now
 puts "#{(end_time - start_time) * 1000}"

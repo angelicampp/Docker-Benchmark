@@ -15,6 +15,7 @@ def mcm_varios(*args):
     return resultado
 
 start_time = time.time()
-mcm_varios(12321, 5674, 123, 821)
+for i in range(300000):
+    mcm_varios(12321, 5674, 123, 821)
 end_time = time.time()
 print(f"{(end_time - start_time) * 1000}")
